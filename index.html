@@ -1,0 +1,64 @@
+<head>
+<script type="text/javascript">// <![CDATA[
+function Validate()
+{
+var x=document.forms["guest"]["email"].value;
+var y=document.forms["guest"]["name"].value;
+if(y==null || y=="")
+{
+alert("Please enter your Name! ");
+return false;
+}
+if(x==null || x=="")
+{
+alert("Please enter your email address!");
+return false;
+}
+var atpos=x.indexOf("@");
+var dotpos=x.lastIndexOf(".");
+if (atpos<1 || dotpos<atpos+2 ||="" dotpos+2="">=x.length)
+{
+alert("Not a valid e-mail address");
+return false;
+}
+else
+return true;
+}
+</atpos+2>
+// ]]></script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+body,td,th {
+	font-size: large;
+}
+body {
+	background-repeat: no-repeat;
+}
+</style>
+</head>
+
+<body background="../../TEST-SITE/background.jpg">
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>
+  </pre>
+</p>
+<form action="addcomment.php" method="post" name="guest" onsubmit="return Validate();">
+
+  <p>Please Sign our Family guest book. Have a nice time !</p>
+  <p>Name:
+    <input type="text" name="name" />
+  </p>
+  <p>Email:
+    <input type="text" name="email" />
+  </p>
+  <p>Message:
+  <textarea cols="50" name="message" rows="10"> </textarea>
+    
+    <input type="submit" value="Sign this in the Book" />
+  </p>
+  <p>&nbsp;</p>
+</form>
+<pre>
+</body>
